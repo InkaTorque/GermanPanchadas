@@ -30,6 +30,12 @@ public class MovimientoScript : MonoBehaviour {
 		if (Input.GetKeyUp ("d") || Input.GetKeyUp ("a")) {
 			rigidbody2D.velocity=new Vector2(0,0);
 		}
+		if (Input.GetKey ("d") && Input.GetKey ("space")) {
+			rigidbody2D.velocity=new Vector2(5,5);
+		}
+		if (Input.GetKey ("a") && Input.GetKey ("space")) {
+			rigidbody2D.velocity=new Vector2(-5,5);
+		}
 
 	}
 }
