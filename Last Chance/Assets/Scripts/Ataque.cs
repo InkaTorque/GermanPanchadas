@@ -54,6 +54,6 @@ public class Ataque : MonoBehaviour
 	{
 		//posicion.Set (posicion.x+32, posicion.y, posicion.z);
 		//Instantiate (BulletPrefab, posicion, Quaternion.identity);
-		Instantiate (BulletPrefab, new Vector3(transform.position.x,transform.position.y,transform.position.z), Quaternion.identity);
+		Instantiate (BulletPrefab, new Vector3(transform.position.x+2,transform.position.y,transform.position.z), Quaternion.identity);
 	}
 }
